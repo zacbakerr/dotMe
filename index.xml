@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Zachary Baker</title>
-    <link>https://github.com/zacbakerr/me/</link>
+    <link>https://github.com/zacbakerr/dotMe/</link>
     <description>Recent content in Home on Zachary Baker</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://github.com/zacbakerr/me/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://github.com/zacbakerr/dotMe/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://github.com/zacbakerr/me/about/</link>
+      <link>https://github.com/zacbakerr/dotMe/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/zacbakerr/me/about/</guid>
+      <guid>https://github.com/zacbakerr/dotMe/about/</guid>
       <description>About I am a sophomore at Thomas Jefferson High School for Science and Technology in Northern Virginia. Some things I like to do include crew, coding, playing chess, and more. This site is my portion of the internet. It contains projects, my resume, the occasional blog post, and more. This site was largely inspirited by Jonathan Buchholz1.
 This site was made using Markdown as the main language and Hugo as a framework for building the site.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://github.com/zacbakerr/me/contact/</link>
+      <link>https://github.com/zacbakerr/dotMe/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/zacbakerr/me/contact/</guid>
+      <guid>https://github.com/zacbakerr/dotMe/contact/</guid>
       <description>Contact Email: zac.r.baker06@gmail.com 2024zbaker@tjhsst.edu Phone Number: 1-703-405-1525 Github: zacbakerr LinkedIn: Zac Baker Public Key: GPG zacbaker.eth </description>
     </item>
     
     <item>
       <title>Resume</title>
-      <link>https://github.com/zacbakerr/me/resume/</link>
+      <link>https://github.com/zacbakerr/dotMe/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/zacbakerr/me/resume/</guid>
+      <guid>https://github.com/zacbakerr/dotMe/resume/</guid>
       <description>I am a sophomore at Thomas Jefferson High School for Science and Technology Extracurriculars Class Council Historian. Two years ongoing. TJ Crew Coxswain Men&amp;rsquo;s First Varsity Boat. Two years ongoing. Inspirit AI Ambassador. One year ongoing. TJ Speech Officer 2 Years Ongoing School Sysadmin Understudy. 1 year Speech Camp Counselor 1 year ongoing. TJ Media Photographer, Cinematographer I regularly film and photograph school games, dances, events, and more. Chess Club Long time casual player.</description>
     </item>
     

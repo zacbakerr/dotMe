@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Zachary Baker</title>
-    <link>https://zacbakerr.github.io/dotMe/</link>
+    <link>https://zacbakerr.github.io/</link>
     <description>Recent content in Home on Zachary Baker</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://zacbakerr.github.io/dotMe/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://zacbakerr.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://zacbakerr.github.io/dotMe/post/</link>
+      <link>https://zacbakerr.github.io/post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zacbakerr.github.io/dotMe/post/</guid>
+      <guid>https://zacbakerr.github.io/post/</guid>
       <description>Posts 2022-04-17 | Encompas
 2020-12-18 | The Effect of Location on Number of Lyme Disease Cases</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://zacbakerr.github.io/dotMe/about/</link>
+      <link>https://zacbakerr.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zacbakerr.github.io/dotMe/about/</guid>
+      <guid>https://zacbakerr.github.io/about/</guid>
       <description>About I am a sophomore at Thomas Jefferson High School for Science and Technology in Northern Virginia. Some things I like to do include crew, coding, playing chess, and more. This site is my portion of the internet. It contains projects, my resume, the occasional blog post, and more. This site was largely inspirited by Jonathan Buchholz1.
 This site was made using Markdown as the main language and Hugo as a framework for building the site.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://zacbakerr.github.io/dotMe/contact/</link>
+      <link>https://zacbakerr.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zacbakerr.github.io/dotMe/contact/</guid>
+      <guid>https://zacbakerr.github.io/contact/</guid>
       <description>Contact Email: zac.r.baker06@gmail.com 2024zbaker@tjhsst.edu Phone Number: 1-703-405-1525 Github: zacbakerr LinkedIn: Zac Baker Public Key: GPG zacbaker.eth </description>
     </item>
     
     <item>
       <title>Resume</title>
-      <link>https://zacbakerr.github.io/dotMe/resume/</link>
+      <link>https://zacbakerr.github.io/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zacbakerr.github.io/dotMe/resume/</guid>
+      <guid>https://zacbakerr.github.io/resume/</guid>
       <description>I am a rising junior at Thomas Jefferson High School for Science and Technology Extracurriculars Freshman Year Activity Role Froshcomm1 Officer Class Council Officer TJ Crew Coxswain (Men&amp;rsquo;s First Novice Boat) TJ Media Photographer, Cinematographer TJ Speech Member Anthos Capital Intern Freshman Summer Activity Role Speech Camp Counselor Inspirit AI Ambassador Sophomore Year Activity Role Class Council Historian TJ Speech Officer Sysadmin Understudy Inspirit AI Ambassador TJ Crew Coxswain (Men&amp;rsquo;s First Varsity Boat) TJ Media Photographer, Cinematographer Sophomore Summer Activity Role Blockchain Research @ Georgetown Intern Resilient Crew 8-week Resliant Rowing Camp Junior Year2 Activity Role Class Council Historian TJ Crew xxx TJ Speech Officer TJ Media Photographer, Cinematographer Angler&amp;rsquo;s Alliance Treasurer Other Extracurriculars Chess Club Long time casual player.</description>
     </item>
     

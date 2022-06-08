@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://zacbakerr.github.io/dotMe/posts/encompas/</loc>
+    <lastmod>2022-04-17T18:34:55-04:00</lastmod>
+  </url><url>
+    <loc>https://zacbakerr.github.io/dotMe/</loc>
+    <lastmod>2022-04-17T18:34:55-04:00</lastmod>
+  </url><url>
+    <loc>https://zacbakerr.github.io/dotMe/posts/</loc>
+    <lastmod>2022-04-17T18:34:55-04:00</lastmod>
+  </url><url>
+    <loc>https://zacbakerr.github.io/dotMe/posts/lyme-disease/</loc>
+    <lastmod>2020-12-18T21:25:32-04:00</lastmod>
+  </url><url>
     <loc>https://zacbakerr.github.io/dotMe/post/</loc>
     <priority>0</priority>
   </url><url>
@@ -10,8 +22,6 @@
     <loc>https://zacbakerr.github.io/dotMe/categories/</loc>
   </url><url>
     <loc>https://zacbakerr.github.io/dotMe/contact/</loc>
-  </url><url>
-    <loc>https://zacbakerr.github.io/dotMe/</loc>
   </url><url>
     <loc>https://zacbakerr.github.io/dotMe/resume/</loc>
   </url><url>

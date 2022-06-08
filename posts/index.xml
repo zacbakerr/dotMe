@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Zachary Baker</title>
+    <link>https://zacbakerr.github.io/dotMe/posts/</link>
+    <description>Recent content in Posts on Zachary Baker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Apr 2022 18:34:55 -0400</lastBuildDate><atom:link href="https://zacbakerr.github.io/dotMe/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Encompas</title>
+      <link>https://zacbakerr.github.io/dotMe/posts/encompas/</link>
+      <pubDate>Sun, 17 Apr 2022 18:34:55 -0400</pubDate>
+      
+      <guid>https://zacbakerr.github.io/dotMe/posts/encompas/</guid>
+      <description>Encompas Go to encompas.tech to view our site which is hosted via GitHub Pages
+Inspiration In a world where a persons values define how they live, being able to accurately determine your stance on world issues is vital. We immediately noticed that all the current quizzes that help determine your stance are extremely outdated, vague, or inaccurate.
+What it does Encompas allows users to vizualize where they stand on the political compass via a 4d graph.</description>
+    </item>
+    
+    <item>
+      <title>The Effect of Location on Number of Lyme Disease Cases</title>
+      <link>https://zacbakerr.github.io/dotMe/posts/lyme-disease/</link>
+      <pubDate>Fri, 18 Dec 2020 21:25:32 -0400</pubDate>
+      
+      <guid>https://zacbakerr.github.io/dotMe/posts/lyme-disease/</guid>
+      <description>The Effect of Location on Number of Lyme Disease Cases By Zachary R. Baker and Srishanth Tangedipalli Thomas Jefferson High School for Science and Technology Dr. Kathleen Morrow, Ms. Erinn Harris, and Ms. Julia Litchford
+Introduction Lyme Disease has had over 25,000 cases every year in the US since 2007 (Monaghan et al, 2015). It is a vector-borne disease, which means that it is transmitted to humans and other animals by blood-feeding animals, such as ticks or mosquitos.</description>
+    </item>
+    
+  </channel>
+</rss>

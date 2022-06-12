@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Zachary Baker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Apr 2022 18:34:55 -0400</lastBuildDate><atom:link href="https://zacbakerr.github.io/dotMe/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jun 2022 18:52:32 -0400</lastBuildDate><atom:link href="https://zacbakerr.github.io/dotMe/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Universe&#39;s Athenaeum</title>
+      <link>https://zacbakerr.github.io/dotMe/posts/athenaeum/</link>
+      <pubDate>Sun, 12 Jun 2022 18:52:32 -0400</pubDate>
+      
+      <guid>https://zacbakerr.github.io/dotMe/posts/athenaeum/</guid>
+      <description>&lt;!DOCTYPE html&gt; Universe&#39;s Athenaeum The Universe&#39;s Athenaeum The Universe&#39;s Athenaeum contains everything that has been written, will be written, and could be written. Well, at least things with a length of less than 856. The possible characters are the lowercase alphabet, the comma, the period, and the space. So how many books are there in this athenaeum? Well with 29 possible characters and ~855 characters in one book, there are 29^855 books.</description>
+    </item>
+    
     <item>
       <title>Encompas</title>
       <link>https://zacbakerr.github.io/dotMe/posts/encompas/</link>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang=""><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Persona</title>
+    <meta name="description" content="A simple monospaced resume theme for Hugo.">
+    <meta name="author" content='Zachary Baker'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="/dotMe/sass/researcher.min.css">
+
+    
+        <link rel="icon" type="image/ico" href="https://zacbakerr.github.io/dotMe/favicon.ico">
+    
+
+    
+        
+    
+</head>
+
+    <body><div class="container mt-5">
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+        <a class="navbar-brand mx-0 mr-sm-auto" href="https://zacbakerr.github.io/dotMe" title="Zachary Baker">
+          
+          Zachary Baker
+        </a>
+        <div class="navbar-nav flex-row flex-wrap justify-content-center">
+            
+                
+                
+                    <a class="nav-item nav-link" href="/dotMe/about" title="About">
+                        About
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/dotMe/resume" title="Resume">
+                        Resume
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/dotMe/posts" title="Posts and Projects">
+                        Posts and Projects
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/dotMe/contact" title="Contact">
+                        Contact
+                    </a>
+                    
+                
+            
+        </div>
+    </nav>
+</div>
+<hr>
+<div id="content">
+<div class="container">
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title>Persona</title>
+        <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> -->
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    </head>
+    <body>
+        <center>
+        <h1>Persona</h1>
+        <p>Welcome to Persona.</p>
+        <form id="haveAccount">
+            <input id="publicKey" type="text" placeholder="Enter public key..." style="width:500px"></input>
+            <br><br>
+            <input id="corrProfile" type="password" placeholder="Enter corresponding profile..." style="width:500px"></input>
+            <br><br>
+            <button type="submit" id="search" style="width:120px" onclick="searchProfile()">Submit</button>
+            <a onclick="swap('haveAccount', 'makeAccount')"><p style="font-size: 12px">Generate New Pair</p></a>
+        </form>
+        <form id="makeAccount">
+            <input type="text" id="name" placeholder="Enter your name..." style="width: 200px"></input>
+            <input type="text" id="username" placeholder="Enter your username..." style="width: 200px; margin-left:20px"></input>
+            <br>
+            <br>
+            <input type="email" id="email" placeholder="Enter your email..." style="width: 200px"></input>
+            <input type="text" id="bio" placeholder="Enter your bio..." style="width: 200px; margin-left:20px"></input>
+            <br><br>
+            <button type="submit" id="makeProfile" style="width:120px" onclick="generateProfile()">Submit</button>
+        </form>
+        <form id="accountInfo">
+            <h3>Public Key: </h3><h4 id="pubKey" style="width: 750px; word-wrap: break-word">xxx</h4>
+            <h3>Private Key: </h3><h4 id="privKey" style="width: 750px; word-wrap: break-word">xxxx</h4>
+            <h3>Profile: </h3><h4 id="profile" style="width: 750px; word-wrap: break-word">xxxxx</h4>
+        </form>
+        <form id="searchResults">
+            <h3>Profile: </h3><h4 id="returnedProfile" style="width: 750px; word-wrap: break-word">xxx</h4>
+        </form>
+        </center>
+        <py-script>
+            from random import randrange, getrandbits
+            from math import gcd as bltin_gcd
+            def coprime2(a, b):
+                return bltin_gcd(a, b) == 1
+            def is_prime(n, k=128):
+                if n == 2 or n == 3:
+                    return True
+                if n <= 1 or n % 2 == 0:
+                    return False
+                # find r and s
+                s = 0
+                r = n - 1
+                while r & 1 == 0:
+                    s += 1
+                    r //= 2
+                # do k tests
+                for _ in range(k):
+                    a = randrange(2, n - 1)
+                    x = pow(a, r, n)
+                    if x != 1 and x != n - 1:
+                        j = 1
+                        while j < s and x != n - 1:
+                            x = pow(x, 2, n)
+                            if x == 1:
+                                return False
+                            j += 1
+                        if x != n - 1:
+                            return False
+                return True
+            def generate_prime_candidate(length):
+                p = getrandbits(length)
+                # apply a mask to set MSB and LSB to 1
+                p |= (1 << length - 1) | 1
+                return p
+            def generate_prime_number(length):
+                p = 4
+                # keep generating while the primality test fail
+                while not is_prime(p, 128):
+                    p = generate_prime_candidate(length)
+                return p
+            def egcd(a, b):
+                if a == 0:
+                    return (b, 0, 1)
+                else:
+                    g, y, x = egcd(b % a, a)
+                    return (g, x - (b // a) * y, y)
+            def modinv(a, m):
+                g, x, y = egcd(a, m)
+                if g != 1:
+                    raise Exception('modular inverse does not exist')
+                else:
+                    return x % m
+            def sign(message, privateKey):
+                privateKey1 = int(privateKey[:len(privateKey)//2])
+                privateKey2 = int(privateKey[len(privateKey)//2:])
+                messageArray = []
+                for i in range(len(message)):
+                    messageArray.append(ord(message[i]))
+                messageNumber = ""
+                for i in range(len(messageArray)):
+                    messageNumber += str(messageArray[i])
+                signature = pow(int(messageNumber), int(privateKey2), int(privateKey1))
+                return signature
+            from js import document 
+            from pyodide import create_proxy
+            def genProfile(event):
+                profileString = "";
+                profileString += (document.getElementById('name').value) + '|'
+                profileString += (document.getElementById('username').value) + '|'
+                profileString += (document.getElementById('email').value) + '|'
+                profileString += (document.getElementById('bio').value)
+                primes = []
+                primes.append(generate_prime_number(512))
+                primes.append(generate_prime_number(512))
+                multiplied_prime = primes[0] * primes[1]
+                totient = (primes[0] - 1) * (primes[1] - 1)
+                coprime = 0
+                rng = randrange(1, totient)
+                for i in range (rng, totient, 1):
+                    if coprime2(i, totient):
+                        coprime = i
+                        break
+                modular_multiplicative_inverse = modinv(coprime, totient)
+                publicKeys = [multiplied_prime, coprime]
+                privateKeys = [multiplied_prime, modular_multiplicative_inverse]
+                publicKeys[0] = '{:0309}'.format(publicKeys[0])
+                publicKeys[1] = '{:0309}'.format(publicKeys[1])
+                privateKeys[0] = '{:0309}'.format(privateKeys[0])
+                privateKeys[1] = '{:0309}'.format(privateKeys[1])
+                publicKey = publicKeys[0] + publicKeys[1]
+                privateKey = privateKeys[0] + privateKeys[1]
+                profile = sign(profileString, privateKey)
+                pyscript.write('profile', profile)
+                pyscript.write('pubKey', publicKey)
+                pyscript.write('privKey', privateKey)
+            button = document.getElementById("makeProfile")
+            button.addEventListener("click", create_proxy(genProfile))
+            def verify(signature, publicKey):
+                publicKey1 = int(publicKey[:len(publicKey)//2])
+                publicKey2 = int(publicKey[len(publicKey)//2:])
+                signature = pow(int(signature), publicKey2, publicKey1)
+                count = 0
+                message = ""
+                while count < len(str(signature)):
+                    signature = str(signature)
+                    if int(str(signature[count])) <= 2:
+                        message += chr(int(str(signature[count:count+3])))
+                        count += 3
+                    else:
+                        message += chr(int(str(signature[count:count+2])))
+                        count += 2
+                return message
+            def searchProfile(event):
+                publicKey = (document.getElementById('publicKey').value)
+                corrProfile = (document.getElementById('corrProfile').value)
+                profile = verify(corrProfile, publicKey)
+                pyscript.write('returnedProfile', profile)
+            button = document.getElementById("search")
+            button.addEventListener("click", create_proxy(searchProfile))
+        </py-script>
+    </body>
+    <script type="text/javascript">
+        document.getElementById("makeAccount").style.display = "none";
+        document.getElementById("accountInfo").style.display = "none";
+        document.getElementById("searchResults").style.display = "none";
+        var form = document.getElementById("haveAccount");
+        function handleForm(event) { event.preventDefault(); } 
+        form.addEventListener('submit', handleForm);
+        var form = document.getElementById("makeAccount");
+        function handleForm(event) { event.preventDefault(); } 
+        form.addEventListener('submit', handleForm);
+        function swap(swap1, swap2) {
+            var x = document.getElementById(swap1);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                document.getElementById(swap2).style.display = "none";
+            } else {
+                x.style.display = "none";
+                document.getElementById(swap2).style.display = "block";
+            }
+        }
+        function generateProfile() {
+            profileString = "";
+            profileString += (document.getElementById('name').value) + '|'
+            profileString += (document.getElementById('username').value) + '|'
+            profileString += (document.getElementById('email').value) + '|'
+            profileString += (document.getElementById('bio').value)
+            console.log(profileString)
+            swap('makeAccount', 'accountInfo')
+        }
+        function searchProfile() {
+            swap('haveAccount', 'searchResults')
+        }
+    </script>
+</html> 
+</div>
+
+        </div><div id="footer" class="mb-5">
+    <hr>
+    
+    
+        <div class="container text-center">
+            <a href="https://zacbakerr.github.io/dotMe/" title="Made by Zachary Baker"><small>Made by Zachary Baker</small></a>
+        </div>
+    
+</div>
+</body>
+</html>
